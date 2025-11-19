@@ -1,14 +1,12 @@
 #include<stdio.h>
-int fact(int n){
-    if(n=0)
-    return 1;
-     int fact =1;
+int fact(){
+    int n=8,i;
+    int fact=1;
     for(int i =1;i<=n;i++){
-         int fact  = fact*1;
+         fact  = fact*i;
     }
-    return fact;
+    printf("%d",fact);
 }
 int main(){
-   int result= fact(7);
-   printf("%d",result);
+  fact();
 }
