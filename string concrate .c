@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
    int main(){
-     char abd[18];
+     char abd[17];
      printf("enter your string\n");
      scanf("%s",&abd );
      printf("before concat %s\n", abd);
