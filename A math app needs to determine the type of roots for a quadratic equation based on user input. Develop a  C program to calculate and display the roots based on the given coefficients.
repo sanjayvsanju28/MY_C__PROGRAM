@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c;
+    float D,rp,ip,r1,r2;
+    printf("enter the co efficients of a,b,c");
+    scanf("%f %f %f",&a,&b,&c);
+    if(a==0){
+        printf("not a quadratic eq");
+        return 0;
+    } 
+    D=b*b-4*a*c;
+    if(D>0){
+        r1=(-b+sqrt(D))/(2*a);
+        r2=(-b-sqrt(D))/(2*a);
+        printf("real roots and equal: %.2f %.2f",r1,r2);
+    }else if(D=0){
+        r1=(-b)/(2*a);
+        printf("real roots and equal:%.2f",r1);
+    }else {
+        rp=-b/2*a;
+        ip=sqrt(-D)/(2*a);
+        printf("%.2f %.2f\n",rp,ip);
+        
+    }
+}
+    
