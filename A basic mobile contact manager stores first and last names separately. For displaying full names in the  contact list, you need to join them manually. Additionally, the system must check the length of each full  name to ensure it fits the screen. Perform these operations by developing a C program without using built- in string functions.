@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    char frt[50],lst[50],fl[100];
+    int i=0,j=0,len=0,maxle=20;
+    while (frt[i]!='\0'){
+        fl[len]=frt[i];
+        i++;
+        len++;
+}
+while (lst[j]!='\0'){
+    fl[len]=lst[j];
+    j++;
+    len++;
+}
+printf("Full name:%s\n",fl);
+printf("len of full name : %d\n",len);
+if(len>maxle){
+    printf("name fits screen ");
+}else{
+    printf("name not fits in screen ");
+}
+
+}
+   
