@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct Book{
+char ti[50];
+char au[50];
+int year;
+};
+int main(){
+    int i,n;
+    printf("enter the no.s books");
+    scanf("%d",&n);
+    struct Book bo[n];
+    for(i=0;i<n;i++){
+        printf("enter the details of book %d",i+1);
+        printf("enter ti");
+        scanf("%s",bo[i].ti);
+        printf(" enter au");
+        scanf("%s",bo[i].au);
+        printf("enter year");
+        scanf("%d",bo[i].year);
+    }
+    printf("\n----books---\n");
+    for(i=0;i<n;i++){
+        printf("\n Book %d\n",i+1);
+        printf("%s\n",bo[i].ti);
+        printf("%s \n",bo[i].au);
+        printf("%d \n",bo[i].year);
+    }
+}
